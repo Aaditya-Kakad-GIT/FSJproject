@@ -1,3 +1,28 @@
-p {
-    color: red;
+#topbar {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    background-color: #FF3200; 
+    margin: 0;
+    padding: 0;
+}
+#topbarlogo {
+    height: 80px;
+    width: 100px;
+    background-color: black;
+    box-shadow: 5px 5px 10px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#topbarlogo img {
+    height: 100%;                 
+    width: auto;       
+    display: block;  
 }
