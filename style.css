@@ -20,9 +20,138 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.2s;
+}
+#topbarlogo:hover {
+    transform: scale(1.05);
 }
 #topbarlogo img {
     height: 100%;                 
     width: auto;       
     display: block;  
+}
+#socials {
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    box-shadow: 5px 5px 10px red;
+    height: 5%;
+    border-radius: 50%;
+}
+#instalogo, #twitterlogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    top: 40px;
+}
+#instalogo { 
+    right: 80px; 
+}
+#twitterlogo { 
+    right: 30px; 
+}
+#instalogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+#twitterlogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+@font-face {
+    font-family: 'Districtside';
+    src: url('Districtside.ttf') format('truetype');
+}
+#tbsm {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    left: 60px;
+    background: linear-gradient(180deg, red 0%, orange 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Districtside', sans-serif;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px black;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    transition: transform 0.2s;
+}
+#tbsm:hover {
+    transform: scale(1.05) ;
+}
+#aboutustext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 30px;
+    top: -10px;
+    position: relative;
+    left: 60px;
+    background-color: lightblue;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px white;
+}
+#aboutustext:hover {
+    background: linear-gradient(90deg, green 0%, #ff8c00 100%);
+    color: white;
+    box-shadow: 0 12px 32px 0 #ff3200cc, 0 0 24px 4px #ff8c00cc;
+    transform: scale(1.05);
+    border: 3px solid black;
+    transition: 
+        background 0.4s,
+        color 0.2s,
+        box-shadow 0.3s,
+        transform 0.2s,
+        border 0.3s;
+}
+#aboutuscontent {
+    background-color: #3a1c71;           /* Deep purple */
+    border: 3px solid #5e60ce;           /* Soft blue border */
+    border-radius: 20px;
+    box-shadow: 0 8px 25px #5e60ce55;    /* Blue shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    min-height: 100px;
+    position: relative;
+    left: 60px;
+    padding: 16px;
+    font-size: 1.1rem;
+    color: #fff;                         /* White text */
+    text-align: center;
+    transition:
+        background 0.4s,
+        color 0.2s,
+        box-shadow 0.3s,
+        transform 0.2s,
+        border 0.3s;
+}
+#aboutuscontent:hover {
+    background: linear-gradient(90deg, #5e60ce 0%, #48bfe3 100%); /* Blue gradient */
+    color: #fff;
+    box-shadow: 0 12px 32px 0 #48bfe3cc, 0 0 24px 4px #5e60cecc;
+    transform: scale(1.03);
+    border: 3px solid #48bfe3;           /* Lighter blue border */
 }
